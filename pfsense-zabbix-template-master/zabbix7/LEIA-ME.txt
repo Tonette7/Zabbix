@@ -1,0 +1,18 @@
+CORRECAO PARA ZABBIX 7.0 / 7.4
+
+- Todos os campos "color" dos graficos e prototipos foram colocados entre aspas.
+- Isso evita que o parser YAML interprete valores como 29E900 como numero em notacao cientifica.
+- Importe primeiro pfsense_active_zabbix7_fixed.yaml.
+
+PHP NO PFSENSE
+/usr/local/bin/php e um arquivo executavel, nao uma pasta.
+Confirme o caminho com:
+  command -v php
+  which php
+  ls -l /usr/local/bin/php*
+
+A pasta que precisa ser criada e /root/scripts:
+  mkdir -p /root/scripts
+
+Depois copie pfsense_zbx.php para /root/scripts/pfsense_zbx.php.
+Use no UserParameter o caminho retornado por command -v php.
