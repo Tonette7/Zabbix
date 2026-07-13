@@ -8,3 +8,10 @@ A pasta que precisa ser criada no  pfsense  é /root/scripts:
   mkdir -p /root/scripts
 
 Depois copie pfsense_zbx.php para /root/scripts/pfsense_zbx.php.
+
+
+NO ZABBIX 7.0 / 74
+
+Importar o Template  pfsense_active_zabbix7_fixed.yaml
+ele  vai criar o template pfsense active
+depois adicione esse template no host pfsense.
